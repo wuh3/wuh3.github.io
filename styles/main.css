@@ -1,16 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Text:ital@0;1&display=swap');
 :root {
     --vertical-space: 2rem;
     --horizontal-space: 3rem;
+
+    --light-color: #A1B3AC;
+    --body-color: #013440;
+    --heading-color: #003F63;
+    --contrast-color: #F58766;
+
 }
 body {
     padding-left: 4em;
     font-size: 18px;
     line-height: 1.5;
+    font-family: 'Montserrat', sans-serif;
+    background-image: linear-gradient(112.5deg, rgb(210,205,205) 0%, rgb(210,205,205) 10%,rgb(173,173,173) 10%, rgb(173,173,173) 53%,rgb(169,168,168) 53%,
+     rgb(169,168,168) 55%,rgb(134,133,133) 55%, rgb(134,133,133) 60%,rgb(111,109,109) 60%, rgb(111,109,109) 88%,rgb(81,78,78) 88%, rgb(81,78,78) 91%,
+     rgb(37,36,36) 91%, rgb(37,36,36) 100%),linear-gradient(157.5deg, rgb(210,205,205) 0%, rgb(210,205,205) 10%,
+     rgb(173,173,173) 10%, rgb(173,173,173) 53%,rgb(169,168,168) 53%, rgb(169,168,168) 55%,rgb(134,133,133) 55%, rgb(134,133,133) 60%,rgb(111,109,109) 60%, 
+     rgb(111,109,109) 88%,rgb(81,78,78) 88%, rgb(81,78,78) 91%,rgb(37,36,36) 91%, rgb(37,36,36) 100%),linear-gradient(135deg, rgb(210,205,205) 0%, 
+     rgb(210,205,205) 10%,rgb(173,173,173) 10%, rgb(173,173,173) 53%,rgb(169,168,168) 53%, rgb(169,168,168) 55%,rgb(134,133,133) 55%, rgb(134,133,133) 60%,
+     rgb(111,109,109) 60%, rgb(111,109,109) 88%,rgb(81,78,78) 88%, rgb(81,78,78) 91%,rgb(37,36,36) 91%, rgb(37,36,36) 100%),linear-gradient(90deg, rgb(173,173,173),
+     rgb(228, 228, 228)); background-blend-mode:overlay,overlay,overlay,normal;
+    color: var(--body-color);
 }
+/* main {
+    /* background-color: var(--light-color); */
+/* }  */
+
+/* header, nav, nav a {
+    background-color: var(--light-color);
+} */
 h1, h2, h3 {
     line-height: 1.2;
+    font-family: 'Crimson Text', serif;
+    color: var(--heading-color);
 }
 
+a {
+    color: var(--body-color);
+    text-decoration-color: var(--contrast-color);
+}
+
+a:hover {
+    color: var(--contrast-color);
+    text-decoration-color: var(--heading-color);
+    text-decoration: none;
+}
 body#about img {
     height: 15em;
 }
