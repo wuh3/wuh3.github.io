@@ -44,7 +44,7 @@ h1, h2, h3, h4 {
 }
 
 a {
-    color: var(--body-color);
+    color: var(--heading-color);
     text-decoration-color: var(--contrast-color);
     text-decoration: none;
 }
@@ -53,6 +53,12 @@ a:hover {
     color: var(--contrast-color);
     text-decoration-color: var(--heading-color);
     text-decoration: none;
+}
+nav a {
+    color: #80694A;
+}
+body#portfolio h2 {
+    margin-bottom: 2em;
 }
 body#about img {
     height: 30em;
@@ -83,23 +89,9 @@ body {
 
 body > header {
     grid-area: head;
+   
 }
-body > nav {
-    grid-area: nav;
-}
-body > nav ul {
-    list-style-type: none;
-    padding: 0;
-    margin-top: 0;
-}
-body > nav ul li{
-    display:flex;
-    flex-direction: column;
-    padding-bottom: 50px;
-    padding-right: 1rem;
-    font-family: 'Crimson Text', serif;
-    font-size: 1.5em;
-}
+
 body > main {
     grid-area: main;
 }
@@ -118,10 +110,11 @@ body > * {
 }
 header h1, footer h1 {
     margin-bottom: 1em;
+    color: #80694A;
 }
-body#about main {
+/* body#about main {
     margin-left: 10%;
-}
+} */
 body#portfolio ul {
     padding: 0;
 }
@@ -133,7 +126,7 @@ body#portfolio ul#portfolioItems {
     
 }
 body#portfolio ul#portfolioItems img {
-    max-width: 100%;
+    max-width: 90%;
 }
 body#portfolio h1 {
     margin-bottom: 1em;
@@ -146,18 +139,45 @@ body#resume h2 {
     margin-top: 1em;
     margin-bottom: 0;
 }
-body#resume h3, h4 {
+body#resume h3 {
     font-size: var(--resume-font-size);
     margin-top: 1em;
     margin-bottom: 0;
+}
+body#resume h4 {
+    font-size: var(--resume-font-size);
+    margin-top: 0;
+    margin-bottom: 0;
+    color: var(--body-color);
 }
 
 body#resume strong {
     font-size: var(--resume-font-size);
 }
-body#resume li {
+body#resume main {
+    max-width: 60em;
+}
+body#resume main li {
     font-size: var(--resume-font-size);
     font-family: 'Crimson Text', serif;
+}
+body > nav {
+    grid-area: nav;
+}
+body > nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin-top: 0;
+    
+}
+body > nav ul li{
+    display:flex;
+    flex-direction: column;
+    padding-bottom: 50px;
+    padding-right: 1rem;
+    font-family: 'Crimson Text', serif;
+    font-size: 1.5em;
+    
 }
 @media screen and (min-width: 25em) {
     body#portfolio ul#portfolioItems li {
