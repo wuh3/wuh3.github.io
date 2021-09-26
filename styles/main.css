@@ -11,7 +11,7 @@
 }
 body {
     padding-left: 4em;
-    font-size: 18px;
+    font-size: 24px;
     line-height: 1.5;
     font-family: 'Montserrat', sans-serif;
     background-image: linear-gradient(112.5deg, rgb(210,205,205) 0%, rgb(210,205,205) 10%,rgb(173,173,173) 10%, rgb(173,173,173) 53%,rgb(169,168,168) 53%,
@@ -24,6 +24,9 @@ body {
      rgb(228, 228, 228)); background-blend-mode:overlay,overlay,overlay,normal;
     color: var(--body-color);
 }
+strong {
+    font-size: 36px;
+}
 /* main {
     /* background-color: var(--light-color); */
 /* }  */
@@ -34,12 +37,15 @@ body {
 h1, h2, h3 {
     line-height: 1.2;
     font-family: 'Crimson Text', serif;
+    font-size: 50px;
     color: var(--heading-color);
+    margin-top: 0;
 }
 
 a {
     color: var(--body-color);
     text-decoration-color: var(--contrast-color);
+    text-decoration: none;
 }
 
 a:hover {
@@ -48,11 +54,13 @@ a:hover {
     text-decoration: none;
 }
 body#about img {
-    height: 15em;
+    height: 30em;
+    margin-top: 2em;
+    margin-bottom: 10%;
 }
 
 p {
-    max-width: 50em;
+    max-width: 45em;
 }
 body {
     display: grid;
@@ -81,10 +89,15 @@ body > nav {
 body > nav ul {
     list-style-type: none;
     padding: 0;
+    margin-top: 0;
 }
 body > nav ul li{
-    display: inline;
+    display:flex;
+    flex-direction: column;
+    padding-bottom: 50px;
     padding-right: 1rem;
+    font-family: 'Crimson Text', serif;
+    font-size: 1.5em;
 }
 body > main {
     grid-area: main;
@@ -92,6 +105,7 @@ body > main {
 body > footer {
     grid-area: foot;
 }
+
 header, footer {
     padding-top: var(--vertical-space);
     padding-bottom: var(--vertical-space);
@@ -101,14 +115,29 @@ body > * {
     padding-right: var(--horizontal-space);
 }
 header h1, footer h1 {
-    margin: 0;
+    margin-bottom: 1em;
 }
-
+body#portfolio ul {
+    padding: 0;
+}
 body#portfolio ul#portfolioItems {
     display: flex;
     flex-wrap: wrap;
     flex: 1;
     list-style-type: none;
+    
+}
+body#portfolio ul#portfolioItems img {
+    max-width: 100%;
+}
+body#portfolio h1 {
+    margin-bottom: 1em;
+}
+body#portfolio h2 {
+    font-size: 1.5em;
+}
+body#resume h2 {
+    font-size: 1.5em;
 }
 @media screen and (min-width: 25em) {
     body#portfolio ul#portfolioItems li {
@@ -118,6 +147,3 @@ body#portfolio ul#portfolioItems {
 }
 
 
-body#portfolio ul#portfolioItems img {
-    max-width: 100%;
-}
