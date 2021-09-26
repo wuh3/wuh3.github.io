@@ -2,6 +2,7 @@
 :root {
     --vertical-space: 2rem;
     --horizontal-space: 3rem;
+    --resume-font-size: 1em;
 
     --light-color: #A1B3AC;
     --body-color: #013440;
@@ -34,7 +35,7 @@ strong {
 /* header, nav, nav a {
     background-color: var(--light-color);
 } */
-h1, h2, h3 {
+h1, h2, h3, h4 {
     line-height: 1.2;
     font-family: 'Crimson Text', serif;
     font-size: 50px;
@@ -67,7 +68,7 @@ body {
     grid-template-areas: "head head"
                         "nav main"
                         "foot foot";
-    grid-template-columns: 1fr 4fr;
+    grid-template-columns: 1fr 6fr;
     grid-template-rows: auto auto 1fr auto;
 }
 @media screen and (min-width: 23.4em) {
@@ -104,6 +105,7 @@ body > main {
 }
 body > footer {
     grid-area: foot;
+    font-size: 18px;
 }
 
 header, footer {
@@ -116,6 +118,9 @@ body > * {
 }
 header h1, footer h1 {
     margin-bottom: 1em;
+}
+body#about main {
+    margin-left: 10%;
 }
 body#portfolio ul {
     padding: 0;
@@ -134,10 +139,25 @@ body#portfolio h1 {
     margin-bottom: 1em;
 }
 body#portfolio h2 {
-    font-size: 1.5em;
+    font-size: 1.2em;
 }
 body#resume h2 {
-    font-size: 1.5em;
+    font-size: 1.2em;
+    margin-top: 1em;
+    margin-bottom: 0;
+}
+body#resume h3, h4 {
+    font-size: var(--resume-font-size);
+    margin-top: 1em;
+    margin-bottom: 0;
+}
+
+body#resume strong {
+    font-size: var(--resume-font-size);
+}
+body#resume li {
+    font-size: var(--resume-font-size);
+    font-family: 'Crimson Text', serif;
 }
 @media screen and (min-width: 25em) {
     body#portfolio ul#portfolioItems li {
