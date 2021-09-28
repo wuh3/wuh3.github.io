@@ -1,0 +1,47 @@
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width-device-width, initial-scale=1" />
+        <title>Haozhe (Mike) Wu's Personal Website</title>
+        <link rel="stylesheet" href="styles/normalize.css" />
+        <link rel="stylesheet" href="styles/main.css" />
+        <link rel="icon" href="images/favicon.png" />
+    </head>
+    <body id="hydraulic">
+        <header>
+            <h1>Projects</h1>
+        </header>
+        <nav>
+            <ul>
+                <li><a href="index.html">About</Abbr></a></li>
+                <li><a href="portfolio.html">Portfolio</a>
+                    <ul class="projectNav">
+                        <li class="projectList"><a href="project_hydraulic.html">Hydraulic Tool</a></li>
+                        <li class="projectList"><a href="project_arm.html">Robot Arm</a></li>
+                        <li class="projectList"><a href="project_tank.html">Tank Server</a></li>
+                        <li class="projectList"><a href="project_kart.html">Remote Kart</a></li>
+                    </ul>
+                </li>
+                <li><a href="resume.html">Resume</a></li>
+            </ul>
+        </nav>
+        <main>
+            <section class="projectSections">
+                <h1 class="pageTitle">6 DOF Robot Arm Control and Dynamics</h1>
+                <img src="images\portfolio\robot_arm.jpg">
+                <div>
+                    <p> As the final project of my Robot Dynamics & Control course, Allen and I worked as a group of two and compiled a MATLAB script which 
+                        generates the forward and inverse kinematics of a S12 robot. Given 4 poses in 3-dimensional space, we calculated all the velocity and position 
+                        singularities and all possible inverse kinematics solutions. Then, we controlled the robot with inverse dynamics control, PD feedback controller, 
+                        and a model-based tracking controller. Finally, we demonstrated all the singularities and inverse kinematic solutions using the built-in software of the robot.
+                    </p>
+                </div>
+                
+            </section>
+        </main>
+        <footer>
+            You can email me at wuh3@rose-hulman.edu
+        </footer>
+        <script src="scripts/main.js"></script>
+    </body>
+</html>

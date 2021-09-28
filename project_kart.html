@@ -1,0 +1,48 @@
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width-device-width, initial-scale=1" />
+        <title>Haozhe (Mike) Wu's Personal Website</title>
+        <link rel="stylesheet" href="styles/normalize.css" />
+        <link rel="stylesheet" href="styles/main.css" />
+        <link rel="icon" href="images/favicon.png" />
+    </head>
+    <body id="hydraulic">
+        <header>
+            <h1>Projects</h1>
+        </header>
+        <nav>
+            <ul>
+                <li><a href="index.html">About</Abbr></a></li>
+                <li><a href="portfolio.html">Portfolio</a>
+                    <ul class="projectNav">
+                        <li class="projectList"><a href="project_hydraulic.html">Hydraulic Tool</a></li>
+                        <li class="projectList"><a href="project_arm.html">Robot Arm</a></li>
+                        <li class="projectList"><a href="project_tank.html">Tank Server</a></li>
+                        <li class="projectList"><a href="project_kart.html">Remote Kart</a></li>
+                    </ul>
+                </li>
+                <li><a href="resume.html">Resume</a></li>
+            </ul>
+        </nav>
+        <main>
+            <section class="projectSections">
+                <h1 class="pageTitle">Remote Controlled Kart with Object Bypass System</h1>
+                <img src="images\portfolio\remote_kart.jpg">
+                <div>
+                    <p> 
+                        As the final project of my Mechatronics class, I built a remote controlled kart using 3D printing and Arduino AtMega 2560. The chassis is totally designed by 
+                        myself using SolidWorks. I 3D printed it and assembled all the parts. The kart is powered by two DC motors. The steering is controlled by a servo motor. I implemented
+                        the IR Remote library in Arduino to allow the kart to be controlled by a remote. A supersonic sensor was used to detect objects in front of the kart. Then, system will 
+                        implement algorithms to bypass the object by calculating the distance and speed of the kart.
+                    </p>
+                </div>
+                
+            </section>
+        </main>
+        <footer>
+            You can email me at wuh3@rose-hulman.edu
+        </footer>
+        <script src="scripts/main.js"></script>
+    </body>
+</html>

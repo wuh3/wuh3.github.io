@@ -1,0 +1,62 @@
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width-device-width, initial-scale=1" />
+        <title>Haozhe (Mike) Wu's Personal Website</title>
+        <link rel="stylesheet" href="styles/normalize.css" />
+        <link rel="stylesheet" href="styles/main.css" />
+        <link rel="icon" href="images/favicon.png" />
+    </head>
+    <body id="hydraulic">
+        <header>
+            <h1>Projects</h1>
+        </header>
+        <nav>
+            <ul>
+                <li><a href="index.html">About</Abbr></a></li>
+                <li><a href="portfolio.html">Portfolio</a>
+                    <ul class="projectNav">
+                        <li class="projectList"><a href="project_hydraulic.html">Hydraulic Tool</a></li>
+                        <li class="projectList"><a href="project_arm.html">Robot Arm</a></li>
+                        <li class="projectList"><a href="project_tank.html">Tank Server</a></li>
+                        <li class="projectList"><a href="project_kart.html">Remote Kart</a></li>
+                    </ul>
+                </li>
+                <li><a href="resume.html">Resume</a></li>
+            </ul>
+        </nav>
+        <main>
+            <section class="projectSections">
+                <h1 class="pageTitle">Robot Arm User Interface</h1>
+                <img src="images\portfolio\tank_GUI.jpg">
+                <div>
+                    <p> 
+                        In my Robotics Engineering course, I learned a lot of skills of writing web servers with Python, Node.js, and mqtt, etc. I wrote lots of web programs such as 
+                        monopoly, controlling LED on Raspberry Pi extension board using web servers. Then, I deployed thn onto the cloud using Firebase. Combining these skills, I was able to
+                        build a MATLAB App user interface that allow anybody in the world to control a simulated robot arm online. Given joint angle degrees using either the slide bar or
+                        text field and then click Go, the 3D model of the robot arm will move to the correct position. Similarly, given a 3-dimensional coordinate, the system can use inverse 
+                        kinematics to calculate the correct joint angles to achieve such pose and move the simulated arm to the correct position.
+                    </p>
+                </div>
+                
+            </section>
+            <section class="projectSections">
+                <h1 class="pageTitle">Controlling the Actual Tank</h1>
+                <img src="images/portfolio/tank.jpg">
+                <div>
+                    <p> 
+                        The robot tank shown in the picture is completely assembled by myself one piece at a time. The robot was controlled by a Raspberry Pi 4 inside the tank body. By using 
+                        MQTT server, I was able to achieve mutual communications between the tank and my MATLAB user interface. Therefore, my robot arm simulation can control the actual tank.
+                        Notice the five buttons on the top left corner of the UI? They can control the motion of the tank! The coolest part is that we can achieve all the functions that mentioned
+                        in the simulation section, but this time, the actual robot moves together with the 3D model! 
+                        
+                    </p>
+                </div>
+            </section>
+        </main>
+        <footer>
+            You can email me at wuh3@rose-hulman.edu
+        </footer>
+        <script src="scripts/main.js"></script>
+    </body>
+</html>
