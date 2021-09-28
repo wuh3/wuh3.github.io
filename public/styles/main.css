@@ -147,7 +147,7 @@ body#resume main li {
     font-family: 'Crimson Text', serif;
 }
 .projectNav {
-    /* display: none; */
+    display: none;
     margin-left: 1em;
     margin-top: 1.5em;
 }
